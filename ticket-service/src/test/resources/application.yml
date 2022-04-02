@@ -1,0 +1,21 @@
+server:
+  port: 8081
+      
+order:
+  service:
+    url: 127.0.0.1:8083
+    
+staff:
+  service:
+    url: 127.0.0.1:8082
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/ticket?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8
+    username: root
+    password: root
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
